@@ -1,0 +1,21 @@
+package javaapplication5;
+
+import javax.swing.JOptionPane;
+
+public class JavaApplication5 {
+    
+public static void main(String[] args) {
+ 
+     String entrada;
+     double numero,potencia;
+    
+        entrada= JOptionPane.showInputDialog("Digite um número:");
+        numero = Double.parseDouble(entrada);
+        potencia = Math.pow(numero, 5);
+
+        JOptionPane.showMessageDialog(null, "O número " + numero + " elevado à quinta potência é: " + potencia);
+    }
+}
+
+    
+

@@ -1,0 +1,25 @@
+package javaapplication6;
+
+import javax.swing.JOptionPane;
+
+public class JavaApplication6 {
+    
+public static void main(String[] args) {
+ 
+    String entrada;
+    double expoente,resultado;
+       
+        entrada = JOptionPane.showInputDialog("Digite um expoente:");
+         expoente =Double.parseDouble(entrada);
+
+  
+              resultado =Math.pow(5, expoente);
+
+ 
+        JOptionPane.showMessageDialog(null, "5 elevado a " + expoente + " é: " + resultado);
+    }
+}
+
+        
+
+

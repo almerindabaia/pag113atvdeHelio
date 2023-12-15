@@ -1,0 +1,29 @@
+package javaapplication1;
+
+import javax.swing.JOptionPane;
+
+public class JavaApplication1 {
+    
+public static void main(String[] args) {
+String entrada;
+double producao=0,menor=Double.POSITIVE_INFINITY,producaod;
+int dia=1;    
+        while (true) {
+            entrada= JOptionPane.showInputDialog("Digite a produção do dia " + dia + " (-1 para encerrar):");
+             producaod= Double.parseDouble(entrada);
+            if (producaod == -1) {
+                break;
+            }
+            producao+= producaod; 
+            if (producaod < menor) {
+                menor = producao;
+            }
+            dia++;
+        }
+        JOptionPane.showMessageDialog(null, "produção  ano: " + producao + " volquis\n" +
+                "Menor produção diária: " + menor+ " volquis");
+    }
+}
+
+    
+

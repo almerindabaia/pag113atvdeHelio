@@ -1,0 +1,21 @@
+package javaapplication2;
+
+import javax.swing.JOptionPane;
+
+public class JavaApplication2 {
+    
+public static void main(String[] args) {
+  int limite=1000;
+        StringBuilder resultado = new StringBuilder("Quadrados perfeitos até 10000:\n");
+
+
+        for (int i = 1; i * i <= limite; i++) {
+            int quadrado = i * i;
+            resultado.append(quadrado).append("\n");
+        }
+
+        JOptionPane.showMessageDialog(null, resultado.toString());
+    }
+}
+
+    

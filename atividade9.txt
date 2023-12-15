@@ -1,0 +1,30 @@
+package javaapplication9;
+
+import javax.swing.JOptionPane;
+
+public class JavaApplication9 {
+    
+public static void main(String[] args) {
+ 
+      
+    String entrada;
+    int num;
+        entrada = JOptionPane.showInputDialog("Digite o número de termos:");
+        num = Integer.parseInt(entrada);
+        double soma = calcular(num);
+        JOptionPane.showMessageDialog(null, "A soma da série para " + num + " termos é: " + soma);
+    }
+
+    private static double calcular(int numt) {
+        double soma = 0.0;
+
+        for (int i = 1; i <= numt; i++) {
+            double termo = 1.0 / (i * 11 + i);
+            soma += termo;
+        }
+
+        return soma;
+    }
+}
+
+    

@@ -1,0 +1,32 @@
+package javaapplication4;
+
+import javax.swing.JOptionPane;
+
+public class JavaApplication4 {
+    
+public static void main(String[] args) {
+ 
+    int numero;
+    double pi;
+         
+        numero= Integer.parseInt(JOptionPane.showInputDialog("Digite o número "));
+        pi = calcularAproximacaoPi(numero);
+        JOptionPane.showMessageDialog(null, "A aproximação de pi com " + numero+ " termos é: " + pi);
+    }
+
+    private static double calcularAproximacaoPi(int n) {
+        double soma = 0.0;
+        boolean positivo = true;
+
+        for (int i = 1; i <= n; i += 2) {
+            if (positivo) {
+                soma += 1.0 / i;
+            } else {
+                soma -= 1.0 / i;
+            }
+            positivo = !positivo;
+        }
+
+        return 4 * soma;
+    }
+}

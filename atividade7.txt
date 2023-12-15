@@ -1,0 +1,19 @@
+package javaapplication7;
+
+import javax.swing.JOptionPane;
+
+public class JavaApplication7 {
+    
+public static void main(String[] args) {
+ 
+    
+        for (int i = 0; i < 20; i++) {
+           
+            int quadrado = i * i;
+            JOptionPane.showMessageDialog(null, "Passei por aqui - i: " + i + ", i ao quadrado: " + quadrado);
+        }
+    }
+}
+
+    
+
